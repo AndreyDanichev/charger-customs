@@ -1,0 +1,147 @@
+.header {
+	background-color: #000;
+	height: 100vh;
+	background-image: url("../img/bg/header-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	z-index: 4;
+	
+	@media(min-width: 1200px) {
+		height: 980px;
+	}
+	
+	&__menu {
+		position: absolute;
+		color: #FFF;
+		text-transform: uppercase;
+		font-family: 'proxima_novaregular';
+		font-size: 14px;
+		right: 40px;
+		top: 20px;
+		z-index: 5;
+		
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__wrapper {
+		padding: 20px;
+		height: 100vh;
+		position: relative;
+		
+		@media(min-width: 768px) {
+			padding: 40px;
+		}
+		
+		@media(min-width: 1200px) {
+			height: 980px;
+		}
+	}
+
+	&__social {
+		margin: 0;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+		margin-top: 10px;
+		z-index: 1;
+		
+		@media (min-width: 768px) {
+			position: absolute;
+			bottom: 40px;
+			left: 39px;
+		}
+		
+		
+		a {
+			margin: 0;
+			padding: 0;
+			color: #FFF;
+			text-decoration: none;
+			font-size: 14px;
+			display: inline-block;
+			font-family: 'proxima_novaregular';
+			
+			-webkit-transition: 0.3s linear;
+			   -moz-transition: 0.3s linear;
+			    -ms-transition: 0.3s linear;
+			     -o-transition: 0.3s linear;
+			        transition: 0.3s linear;
+			
+			&:hover {
+				color: @mainColor;
+			}
+
+			
+
+			&:after {
+				content: "/";
+				color: #FFF;
+				margin-left: 5px;
+			}
+
+			&:last-child {
+				&:after {
+					content: "";
+				}
+			}
+
+			@media (min-width: 1200px) {
+				letter-spacing: 0.4px;
+				
+				
+				&:after {
+					content: "/";
+					color: #FFF;
+					margin-left: 10px;
+				}
+				
+				&:nth-child(2) {
+					padding-left: 9px;
+				}
+
+				&:last-child {
+					padding-left: 9px;
+					
+					&:after {
+						content: "";
+					}
+				}
+			}
+		}
+	}
+
+	&__scroll-down {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		color: #FFF;
+		font-family: 'proxima_novaregular';
+		font-size: 12px;
+		text-align: right;
+
+		@media (min-width: 768px) {
+			position: absolute;
+			bottom: 40px;
+			right: 40px;
+		}
+
+		@media(min-width: 1200px) {
+			font-size: 14px;
+			bottom: 36px;
+			right: 28px;
+			letter-spacing: 0.4px;
+		}
+	}
+
+
+
+}

@@ -1,0 +1,92 @@
+.charger {
+	
+	@media(min-width: 768px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media(min-width: 1200px) {
+		padding-top: 114px;
+		padding-bottom: 121px;
+	}
+
+	&__img {
+		@media(min-width: 1200px) {
+			margin-right: -2px;
+		}
+	}
+
+	&__desc {
+
+		@media (min-width: 1200px) {
+			padding-left: 80px;
+			margin-bottom: 0px;
+		}
+
+		&-text {
+			margin: 0;
+			padding: 0;
+			-ms-overflow-y: scroll;
+			overflow-y: scroll;
+			height: 200px;
+			border-right: 1px solid #b4b4b4;
+			margin-bottom: 20px;
+			
+			@media(min-width: 768px) {
+				height: 245px;
+				margin-bottom: 0;
+			}
+		}
+		
+		h2 {
+			font-size: 40px;
+			margin-bottom: 20px;
+			font-family: 'playfair_displaybold';
+			
+			@media(min-width: 1200px) {
+				margin: 0;
+				padding: 0;
+				font-size: 60px;
+				letter-spacing: 1.3px;
+				margin-bottom: 45px;
+			}
+		}
+
+		p {
+			margin: 0;
+			padding: 0;
+			
+			@media(min-width: 1200px) {
+				margin: 0;
+				padding: 0;
+				padding-right: 10px;
+				line-height: 24px;
+				font-family: 'proxima_novaregular';
+				font-size: 16px;
+				letter-spacing: 0.4px;
+			}
+
+			span {
+				display: block;
+				margin-top: 15px;
+				color: @mainColor;
+				font-size: 50px;
+				float: left;
+				margin-right: 6px;
+			}
+		}
+	}
+}
+
+#custom-scroll::-webkit-scrollbar {
+	width: 2px;
+	background-color: @mainColor;
+}
+
+#custom-scroll::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+#custom-scroll::-webkit-scrollbar-thumb {
+	background-color: @mainColor;
+}

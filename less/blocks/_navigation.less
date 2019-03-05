@@ -1,0 +1,154 @@
+.navigation {
+	font-size: 14px;
+	text-transform: uppercase;
+	top: 36px;
+	left: 0;
+	right: 0;
+
+	
+	@media(min-width: 768px) {
+		position: absolute;
+	}
+	
+	&--footer {
+		position: static;
+		float: right;
+	}
+
+	ul.navigation__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		position: fixed;
+		display: none;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 4;
+		
+
+		@media (min-width: 768px) {
+			display: block;
+			position: absolute;
+		}
+
+		&--open {
+			display: flex;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-align-items: center;
+			align-items: center;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			background-color: rgba(119, 136, 153, 0.95);
+		}
+
+		li {
+			margin: 0 0 40px;
+			padding: 0;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			cursor: pointer;
+
+			@media(min-width: 768px) {
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				margin-right: 30px;
+				letter-spacing: 0.1px;
+
+				&:first-child {
+					margin-left: -30px;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+			@media(min-width: 992px) {
+				margin-right: 37px;
+
+				&:first-child {
+					margin-left: -182px;
+				}
+			}
+		}
+
+		&--footer {
+			display: block;
+			position: static;
+			
+			
+			@media(min-width: 768px) {
+				float: right;
+				padding-top: 7px;
+			}
+			
+			li {
+				margin: 0 0 15px;
+				padding: 0;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				cursor: pointer;
+
+
+				@media(min-width: 768px) {
+					margin: 0;
+					padding: 0;
+					display: inline-block;
+					margin-right: 38px;
+					letter-spacing: 0.2px;
+
+					&:first-child {
+						margin-left: -30px;
+						margin-right: 34px;
+					}
+
+					&:last-child {
+						margin-right: 0;
+						letter-spacing: 0.6px;
+					}
+				}
+			}
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			-webkit-transition: 0.3s linear;
+			-moz-transition: 0.3s linear;
+			-ms-transition: 0.3s linear;
+			-o-transition: 0.3s linear;
+			transition: 0.3s linear;
+
+			&:hover, &:active {
+				color: @mainColor;
+			}
+		}
+	}
+
+	.navigation__toggle {
+		display: block;
+		font-size: 38px;
+		position: absolute;
+		top: 23px;
+		right: 16px;
+		z-index: 2;
+		cursor: pointer;
+
+		@media(min-width: 768px) {
+			display: none;
+		}
+	}
+
+	.navigation__toggle--fixed {
+		position: fixed;
+	}
+}
+

@@ -1,0 +1,66 @@
+.line {
+	display: none;
+
+	@media(min-width: 1200px) {
+		display: block;
+		position: absolute;
+		z-index: 5;
+		top: 89px;
+		left: 77px;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 47px;
+		height: 2px;
+		font-size: 0;
+		text-indent: -9999px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		box-shadow: none;
+		border-radius: none;
+		border: none;
+
+		span {
+			display: block;
+			position: absolute;
+			width: 47px;
+			top: 0px;
+			right: 0px;
+			height: 2px;
+			background: @mainColor;
+		}
+	}
+
+	&--left-zero {
+		left: 0;
+		top: 79px;
+	}
+
+	&--card {
+		left: 145px;
+		top: 130px;
+
+		span {
+			width: 35px;
+		}
+	}
+
+	&--projects {
+		top: 90px;
+		left: 100px;
+	}
+
+	&--feedback {
+
+		@media(min-width: 1200px) {
+			top: 365px;
+			left: 366px;
+			width: 129px;
+
+			span {
+				width: 100%;
+			}
+		}
+	}
+}

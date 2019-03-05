@@ -1,0 +1,326 @@
+.services {
+	background-color: #000;
+	background-image: url("../img/bg/service-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	
+	@media(min-width: 1200px) {
+		width: 100%;
+		height: 530px;
+		max-height: 530px;
+		overflow: visible;
+	}
+
+	&:before {
+		@media(min-width: 1500px) {
+			content: "s";
+			text-transform: uppercase;
+			font-size: 300px;
+			line-height: 1;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			left: 67px;
+			top: -146px;
+			font-family: 'playfair_displaybold';
+			color: rgba(227,160,98,0.22);
+		}
+	}
+
+	h2 {
+
+		color: #FFF;
+		margin: 0;
+		padding: 0;
+		font-family: 'playfair_displaybold';
+		text-transform: capitalize;
+		line-height: 1;
+		letter-spacing: 1.4px;
+		font-size: 40px;
+		text-align: center;
+
+		@media(min-width: 1200px) {
+			font-size: 60px;
+			margin-left: -3px;
+			margin-top: -7px;
+			text-align: left;
+		}
+		
+	}
+
+	&__heading {
+		position: relative;
+
+		&-link {
+			float: right;
+			border-bottom: 1px solid @mainColor;
+			margin: 0;
+			padding: 0;
+			padding-bottom: 4px;
+			
+			a {
+				text-decoration: none;
+				color: #FFF;
+				text-transform: uppercase;
+				font-family: 'proxima_novaregular';
+				font-size: 14px;
+				line-height: 1;
+				letter-spacing: 1.1px;
+				-webkit-transition: 0.3s linear;
+				-moz-transition: 0.3s linear;
+				-ms-transition: 0.3s linear;
+				-o-transition: 0.3s linear;
+				transition: 0.3s linear;
+				
+				
+				&:hover {
+					color: @mainColor;
+				}
+			}
+		}
+	}
+
+	&__card {
+		position: relative;
+		margin-top: 20px;
+		z-index: 1;
+		width: 310px;
+
+		p {
+			margin: 0;
+			padding: 0;
+			line-height: 24px;
+			letter-spacing: 0.4px;
+			color: #FFF;
+			font-family: 'proxima_novaregular';
+			font-size: 16px;
+			margin-top: 33px;
+			max-width: 220px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@media(min-width: 1200px) {
+			margin-top: 55px;
+		}
+
+		&-heading {
+			color: #FFF;
+			margin: 0;
+			padding: 0;
+			text-transform: capitalize;
+			display: inline-block;
+			font-family: 'proxima_novaregular';
+			font-size: 24px;
+			letter-spacing: .8px;
+			margin-top: 20px;
+			
+			@media(min-width: 1200px) {
+				margin-top: 73px;
+			}
+
+			&--absolute {
+				display: none;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 25px;
+				
+				@media(min-width: 1200px) {
+					display: block;
+				}
+			}
+		}
+
+		&-wrapper {
+			padding: 15px 17px 20px;
+			height: 100%;
+			-webkit-transition: opacity 0.3s linear;
+			-moz-transition: opacity 0.3s linear;
+			-ms-transition: opacity 0.3s linear;
+			-o-transition: opacity 0.3s linear;
+			transition: opacity 0.3s linear;
+			background-color: #000;
+			opacity: 0.89;
+
+			@media(min-width: 1200px) {
+				opacity: 0;
+			}
+		}
+
+		&-desc {
+			border: 1px solid @mainColor;
+			height: 100%;
+			
+			&-link {
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				margin-top: 23px;
+				padding-bottom: 4px;
+				border-bottom: 1px solid @mainColor;
+				-webkit-transition: 0.3s linear;
+				-moz-transition: 0.3s linear;
+				-ms-transition: 0.3s linear;
+				-o-transition: 0.3s linear;
+				transition: 0.3s linear;
+				
+				&:hover {
+					color: #FFF;
+					border-bottom: 1px solid #fff;
+				}
+
+				&:hover a {
+					color: #FFF;
+				}
+				
+				a {
+					display: block;
+					text-decoration: none;
+					color: @mainColor;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					font-size: 14px;
+					line-height: 1;
+					font-family: 'proxima_novaregular';
+					-webkit-transition: 0.3s linear;
+					-moz-transition: 0.3s linear;
+					-ms-transition: 0.3s linear;
+					-o-transition: 0.3s linear;
+					transition: 0.3s linear;
+					
+
+				}
+			}
+		}
+		
+		&-tuning {
+			background-image: url("../img/bg/tuning.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 270px;
+			width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+			position: relative;
+			
+			@media(min-width: 1200px) {
+				height: 348px;
+				width: 347px;
+				margin-left: 0;
+			}
+			
+			&:hover .services__card-wrapper {
+				opacity: 0.89;
+			}
+
+			@media(min-width: 1200px) {
+				&:hover .services__card-heading--absolute {
+					display: none;
+				}
+			}
+
+		}
+
+		&-restoration {
+			background-image: url("../img/bg/restoration.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 270px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			
+			@media(min-width: 1200px) {
+				height: 348px;
+				width: 347px;
+			}
+			
+			&:hover .services__card-wrapper {
+				display: block;
+				background-color: #000;
+				opacity: 0.89;
+			}
+
+			&:hover .services__card-heading--absolute {
+				display: none;
+			}
+		}
+
+		&-repairs {
+			background-image: url("../img/bg/repairs.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 270px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			
+			@media(min-width: 1200px) {
+				height: 348px;
+				width: 347px;
+				margin-right: 0;
+			}
+
+			
+			&:hover .services__card-wrapper {
+				display: block;
+				background-color: #000;
+				opacity: 0.89;
+			}
+
+			&:hover .services__card-heading--absolute {
+				display: none;
+			}
+		}
+
+		&-gradient {
+			width: 100%;
+			height: 100%;
+			background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+			background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+			background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+			opacity: 0.902;
+		}
+	}
+
+	&__intro {
+		display: none;
+		margin: 0;
+		padding: 0;
+		
+		@media(min-width: 1500px) {
+			display: block;
+			color: @mainColor;
+			position: absolute;
+			left: 102px;
+			bottom: 88px;
+			text-transform: capitalize;
+			font-family: 'playfair_displayregular';
+			font-size: 14px;
+			letter-spacing: 1.3px;
+			line-height: 1;
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			-ms-transform: rotate(-90deg);
+			-o-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			
+			&:after {
+				content: "";
+				position: absolute;
+				top: 7px;
+				left: 122px;
+				height: 1px;
+				width: 49px;
+				background-color: @mainColor;
+			}
+		}
+	}
+}

@@ -1,0 +1,133 @@
+/**
+* Owl Carousel v2.3.4
+* Copyright 2013-2018 David Deutsch
+* Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+*/
+/*
+* 	Default theme - Owl Carousel CSS File
+*/
+.top-slider-theme .owl-nav {
+	display: none;
+
+	@media(min-width: 1200px) {
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 30.1%;
+		height: 0;
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	button {
+		color: #FFF !important;
+		text-transform: uppercase;
+		font-family: 'proxima_novaregular' !important;
+		font-size: 14.18px !important;
+	}
+
+	& .owl-prev {
+		position: absolute;
+		left: 40px;
+		
+		&:after {
+			content: "";
+			position: absolute;
+			top: 9px;
+			left: 51px;
+			height: 1px;
+			width: 47px;
+			background-color: @mainColor;
+		}
+	}
+
+	& .owl-next {
+		position: absolute;
+		right: 32px;
+		
+		&:before {
+			content: "";
+			position: absolute;
+			top: 9px;
+			right: 50px;
+			height: 1px;
+			width: 47px;
+			background-color: @mainColor;
+		}
+	}
+}
+
+.top-slider-theme .owl-dots {
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+	margin-top: 10vh;
+
+	@media (min-width: 1200px) {
+		margin-top: 215px;
+		padding-right: 205px;
+	}
+
+	@media(max-height: 500px) {
+		display: none;
+	}
+}
+
+
+.top-slider-theme .owl-dots:before {
+	margin-right: 10px;
+	content: "01";
+	font-family: 'playfair_displaybold';
+	font-size: 26.43px;
+	color: #FFF;
+}
+
+@media (min-width: 1200px) {
+	.top-slider-theme .owl-dots:before {
+		margin-right: 20px;
+		font-size: 26.43px;
+	}
+}
+.top-slider-theme .owl-dots:after {
+	margin-left: 10px;
+	content: "10";
+	font-family: 'playfair_displaybold';
+	font-size: 26.43px;
+	color: #FFF;
+}
+
+@media(min-width: 1200px) {
+	.top-slider-theme .owl-dots:after {
+		margin-left: 19px;
+		font-size: 26.43px;
+	}
+}
+.top-slider-theme .owl-dots .owl-dot {
+	display: inline-block;
+	zoom: 1;
+	*display: inline; }
+	.top-slider-theme .owl-dots .owl-dot span {
+		width: 16.4px;
+		height: 1px;
+		margin: 3px 0px 7px;
+		background: #D6D6D6;
+		display: block;
+		-webkit-backface-visibility: visible;
+		transition: opacity 200ms ease;
+	}
+	.top-slider-theme .owl-dots .owl-dot.active span {
+		margin: 2px 0;
+		height: 10px;
+		background: #e3a062; 
+		-webkit-border-radius: 12px;
+		border-radius: 12px;
+	}
+
+	@media (pointer: fine) {
+		.top-slider-theme .owl-dots .owl-dot:hover span {
+			margin: 2px 0;
+			height: 10px;
+			background: #e3a062; 
+			-webkit-border-radius: 12px;
+			border-radius: 12px;
+		} 
+	}

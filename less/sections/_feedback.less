@@ -1,0 +1,115 @@
+	.feedback {
+		background-image: url("../img/bg/feedback-bg.jpg");
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100%;
+		overflow: visible;
+		
+		&:before {
+			@media(min-width: 1500px) {
+				content: "t";
+				text-transform: uppercase;
+				font-size: 300px;
+				line-height: 1;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				left: 58px;
+				top: -154px;
+				font-family: 'playfair_displaybold';
+				color: rgba(227,160,98,0.22);
+			}	
+		}
+
+		&:after {
+			@media(min-width: 1500px) {
+				content: "c";
+				text-transform: uppercase;
+				font-size: 300px;
+				line-height: 1;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				right: 33px;
+				bottom: -140px;
+				font-family: 'playfair_displaybold';
+				color: rgba(227,160,98,0.22);
+			}	
+		}
+		
+		&__content {
+			text-align: center;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			
+			@media(min-width: 768px) {
+				padding-top: 100px;
+				padding-bottom: 100px;
+			}
+
+			@media(min-width: 1200px) {
+				padding-top: 244px;
+				padding-bottom: 206px;
+			}
+
+			&-text {
+				margin: 0;
+				padding: 0;
+				font-family: 'playfair_displayitalic';
+				font-size: 26px;
+				line-height: 1;
+				letter-spacing: 0.8px;
+				color: #FFF;
+				position: relative;
+				
+				@media(min-width: 768px) {
+					font-size: 36px;
+					line-height: 48px;
+				}
+				
+				&:before {
+					@media(min-width: 1200px) {
+						content: "❝";
+						position: absolute;
+						color: @mainColor;
+						top: 32px;
+						left: -40px;
+						opacity: 0.1;
+						font-size: 350px;
+					}
+				}
+			}
+
+			&-name {
+				margin: 0;
+				padding: 0;
+				font-family: 'proxima_novaregular';
+				font-size: 25px;
+				padding-top: 30px;
+				padding-bottom: 5px;
+				padding-left: 9px;
+				letter-spacing: 1px;
+				color: #FFF;
+				
+				@media(min-width: 768px) {
+					font-size: 30px;
+					padding-top: 52px;
+					padding-bottom: 5px;
+					padding-left: 9px;
+				}
+			}
+
+			&-car {
+				margin: 0;
+				padding: 0;
+				font-family: 'proxima_novalight';
+				font-size: 18px;
+				color: #FFF;
+				letter-spacing: 0.5px;
+				padding-left: 3px;
+			}
+		}
+	}

@@ -1,0 +1,70 @@
+.label {
+	display: none;
+	margin: 0;
+	padding: 0;
+
+	@media(min-width: 1500px) {
+		display: block;
+		color: @mainColor;
+		position: absolute;
+		text-transform: capitalize;
+		font-family: 'playfair_displayregular';
+		font-size: 14px;
+		letter-spacing: 1.3px;
+		line-height: 1;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 7px;
+			left: 122px;
+			height: 1px;
+			width: 49px;
+			background-color: @mainColor;
+		}
+	}
+
+	&--about-us {
+		right: 114px;
+		bottom: 158px;
+		
+		&:after {
+			top: 9px;
+			left: 98px;
+		}
+	}
+
+	&--services {
+		left: 102px;
+		bottom: 88px;
+	}
+
+	&--projects {
+		right: 108px;
+		bottom: 161px;
+		
+		&:after {
+			left: 113px;
+		}
+	}
+
+	&--feedback {
+		left: 105px;
+		bottom: 161px;
+	}
+
+	&--charger {
+		right: 93px;
+		bottom: 177px;
+		
+		&:after {
+			left: 143px;
+		}
+	}
+}
+
